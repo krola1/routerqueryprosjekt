@@ -29,15 +29,11 @@ export default function FilmList() {
     film.title.toLowerCase().includes(search.toLowerCase())
   );
 
-  const listCSS = {
-    listStyleType: "none",
-    width: "fit-content",
-  };
-
   return (
     <>
       <input
         type="text"
+        placeholder="Search here"
         value={search}
         onChange={(e) => setSearch(e.target.value)}
       />
